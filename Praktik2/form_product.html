@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <div class="form">
+            <form action="form_hasil.html" method="get">
+                <div class="image_input" style="float: left;">
+                    <input type="image">
+                </div>
+        <table>
+            <tr>
+            <td>Car Name :</td>
+            <td><input type="text" name="productname" placeholder="Nameproduct"></td>
+            </tr>
+            <tr>
+                <td>Description :</td>
+                <td><textarea name="description" id="description" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                    <td>Account Number :</td>
+                    <td><input type="number" name="accnumber" placeholder="accnumber"></td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td><select name="bank" id="bank">
+                    <option value="bca">BCA</option>
+                    <option value="bni">BNI</option>
+                    <option value="danamon">Danamon</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td><input type="text" name="accholder" placeholder="Name here"></td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td><input type="number" name="transactionNumber" id="transactionNumber" placeholder="Qty"></td>
+            </tr>
+            <tr>
+                <td>
+                <input type="checkbox" name="sendEmail" id="sendEmail">Send Recipt To Email <br>
+                <input type="checkbox" name="sendPhone" id="sendPhone">Send Recipt To Phone Number
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number :</td>
+                <td>
+                    <input type="number" name="phoneNumber" placeholder="Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td>
+                    <input type="email" name="email" placeholder="Put Your Email">
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit" style="width: 10%; background-color: green; color: white;">Order</button>
+        <button type="reset" style="width: 10%; background-color: red; color: white;">Reset</button>
+    </form>    
+    </div>
+        
+</body>
+</html>
