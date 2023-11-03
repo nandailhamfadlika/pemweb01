@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(229, 210, 186);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    background-color: rgb(221, 164, 107);
+    height: 200px;
+}
+
+#header h1{
+    color: blue;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#header blockquote{
+    text-align: center;
+    background-color: rgb(254, 182, 47);
+    font-weight: bold;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+    
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+}
+
+.isi .hurufB{
+    font-size: 60px;
+    color: blue;
+}
