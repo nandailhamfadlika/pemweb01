@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PRAKTIKUM NANDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+    <fieldset>
+        <legend>Booking Service</legend>
+        <table>
+            <tr>
+                <td>Jenis Kendaraan :</td>
+                <td>
+                    <select name="kendaraan" id="kendaraan">
+                        <option value="Minibus">Minibus</option>
+                        <option value="Motor">Motor</option>
+                        <option value="Mobil">Mobil</option>
+                        <option value="Sepeda">Sepeda</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Pemesan :</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Kategori Peminjam :</td>
+                <td>
+                    <input type="radio" id="pribadi" name="age" value="pribadi">
+                    <label for="pribadi">Pribadi</label>
+                    <input type="radio" id="perusahaan" name="age" value="perusahaan">
+                    <label for="perusahaan">Perusahaan/Organisasi</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Deskripsi Kebutuhan :</td>
+                <td><textarea name="desc" id="desc" cols="100" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td>Jam, Tanggal Service :</td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Request Montir :</td>
+                <td><input type="text" id="reqMon"></td>
+            </tr>
+            <tr>
+                <td>Telpon/HP :</td>
+                <td><input type="number" id="telp"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+        </table>
+        <div class="button">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
