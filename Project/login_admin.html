@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Admin</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href=""><b>eCar Rental Delivery Cars For you Need | Admin</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Login untuk memasuki halaman admin</p>
+
+      <form action="daftarKendaraan.html" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" id="username" name="username" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+        <a href="regist.html" class="text-center">Registrasi User</a>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block" onclick="validateLogin()">login</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<script>
+  function validateLogin() {
+      event.preventDefault(); // Mencegah form untuk melakukan submit
+
+      // Mendapatkan nilai dari input username dan password
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Memeriksa apakah username dan password adalah admin
+      if (username === "admin" && password === "admin") {
+          // Jika benar, redirect ke halaman admin.html
+          window.location.href = "daftarKendaraan.html";
+      } else {
+          // Jika salah, tampilkan pesan error
+          alert("Username atau password salah. Coba lagi.");
+      }
+  }
+</script>
+
+<!-- jQuery -->
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/js/adminlte.min.js"></script>
+</body>
+</html>

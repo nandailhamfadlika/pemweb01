@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistem Managemen Tugas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CDN ICON BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CDN ICON BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+
+
+    <button class="btn btn-muted border border-rounded mx-3 mt-4" type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Menu</button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="produk.html">Produk & Layanan</a>
+      </li>
+      <li class="nav-item">
+      </li>
+      <a class="nav-link active" aria-current="page" href="formPinjam.html">Booking</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Berita</a>
+      </li>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+      </li>
+
+    </ul>
+
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success mx-3" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
+    <h1 class="m-4">Admin eCarRental</h1>
+    <form class="d-flex my-4" role="search">
+      <input class="border border-rounded ms-auto me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success mx-3" type="submit">Search</button>
+    </form>
+    <!-- Content Header (Page header) -->
+    <div class="border rounded border-muted mx-5">
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Daftar Kendaraan</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="daftarKendaraan.html">Admin</a></li>
+                <li class="breadcrumb-item active">Kelola Kendaraan</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <a href="admin_formKendaraan.html" class="btn bg-gradient-secondary" >Tambah</a>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <div class="card-body">
+        <table class="table table-bordered table-responsive">
+            <tr class="">
+              <td class="">No.</td>
+              <td>Nama Kendaraan</td>
+              <td>Kategori</td>
+              <td>Fasilitas</td>
+              <td>Action</td>
+            </tr>
+            <tr>
+              <td class="table-info" id="No">1.</td>
+              <td class="table-info" id="Nama Kendaraan">Bus Bintang Lima</td>
+              <td class="table-info" id="Kategori">Bus Wisata
+              </td>
+              <td class="table-info" id="Fasilitas">65 kursi 2x2 wifi bagasi luas</span></td>
+              
+              <td class="table-info" id="Action">
+                <ul>
+                  <a href="detail_bus.html">Detail</a>
+                  <a href="formPinjam.html">| Edit</a>
+                  <a href="">| Delete</a>
+                </ul>
+              </td>
+            </tr>
+            <tr >
+              <td class="" id="No">2.</td>
+              <td class="" id="Nama Kendaraan"></td>
+              <td class="" id="Kategori"></td>
+              <td class="" id="Fasilitas"></span></td>
+              
+              <td class="" id="Action">
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-info" id="No">3.</td>
+              <td class="table-info" id="Nama Kendaraan"></td>
+              <td class="table-info" id="Kategori"></td>
+              <td class="table-info" id="Fasilitas"></span></td>
+              
+              <td class="table-info" id="Action">
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="" id="No">4.</td>
+              <td class="" id="Nama Kendaraan"></td>
+              <td class="" id="Kategori"></td>
+              <td class="" id="Fasilitas"></span></td>
+              <td class="" id="Action">
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.content -->
+
+
+      <!-- content dalem dashboard (close) -->
+
+    </div>
+    <!-- /.card-body -->
+    <!-- /.card-footer-->
+  </div>
+  <!-- /.card -->
+
+  </section>
+  <!-- /.content -->
+  </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io * Kaffah Rizal</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Alexander Pierce</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                  <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                    aria-label="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                      <i class="fas fa-search fa-fw"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Sidebar Menu -->
+              <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                  data-accordion="false">
+                  <!-- Add icons to the links using the .nav-icon class
+                    with font-awesome or any other icon font library -->
+                  <div class="category-list">
+                    <h4>Kategori Produk</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <a href="daftarKendaraan.html">Kendaraan</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="daftarPeminjam.html">Peminjam</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#">Transaksi</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="login_admin.html">Log Out</a>
+                      </li>
+                      <!-- Tambahkan lebih banyak kategori sesuai kebutuhan -->
+                    </ul>
+                  </div>
+                </ul>
+              </nav>
+              <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+          </div>
+
+  <!-- jQuery -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="assets/js/adminlte.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
